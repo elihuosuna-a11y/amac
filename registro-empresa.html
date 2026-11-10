@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registra tu empresa | AMAC</title>
+  <meta name="description" content="Registro de empresas en la bolsa de trabajo de AMAC.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body class="pagina-publica">
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado encabezado--publico">
+    <div class="encabezado__interior">
+      <a class="logo" href="index.html">
+        <img src="img/isotipo.svg" alt="" width="38" height="22">
+        <span>AMAC</span><span class="solo-lector">, ir a vacantes</span>
+      </a>
+      <div class="encabezado__acciones">
+        <a class="boton-ayuda" href="tel:+528100000000">
+          <img src="img/iconos/telefono.svg" alt="" width="22" height="22">
+          <span>Ayuda<span class="boton-ayuda__telefono">: 81 0000 0000</span><span class="solo-lector">, llamar a AMAC</span></span>
+        </a>
+        <a class="boton boton--secundario boton--chico" href="login.html">Iniciar sesión</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="contenedor">
+      <div class="titulo-pagina">
+        <h1>Registra tu empresa</h1>
+        <p>Publica vacantes para personas adultas mayores. Son 6 partes; todos los campos se piden.</p>
+      </div>
+
+      <div class="registro">
+        <nav class="registro__indice tarjeta indice-pasos" aria-label="Partes del registro">
+          <ol>
+            <li><a href="#parte-empresa"><span class="paso" aria-hidden="true">1</span>Empresa</a></li>
+            <li><a href="#parte-direccion"><span class="paso" aria-hidden="true">2</span>Dirección</a></li>
+            <li><a href="#parte-contacto"><span class="paso" aria-hidden="true">3</span>Contacto</a></li>
+            <li><a href="#parte-imagenes"><span class="paso" aria-hidden="true">4</span>Logo y banner</a></li>
+            <li><a href="#parte-contrasena"><span class="paso" aria-hidden="true">5</span>Contraseña</a></li>
+            <li><a href="#parte-terminos"><span class="paso" aria-hidden="true">6</span>Términos</a></li>
+          </ol>
+        </nav>
+
+        <form class="registro__formulario" action="empresa-vacantes.html" method="get">
+          <section class="tarjeta seccion-form" id="parte-empresa" aria-labelledby="parte-empresa-titulo">
+            <h2 class="seccion-form__titulo" id="parte-empresa-titulo"><span class="paso" aria-hidden="true">1</span>Datos de la empresa</h2>
+            <div class="fila-campos">
+              <div class="campo-formulario">
+                <label for="empresa">Nombre de la empresa</label>
+                <input type="text" id="empresa" name="empresa" autocomplete="organization" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="giro">Giro</label>
+                <select id="giro" name="giro" required>
+                  <option value="">Elige una opción</option>
+                  <option value="comercio">Comercio</option>
+                  <option value="servicios">Servicios</option>
+                  <option value="industria">Industria</option>
+                  <option value="alimentos">Alimentos</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="fila-campos fila-campos--3">
+              <div class="campo-formulario">
+                <label for="rfc">RFC</label>
+                <p class="campo-formulario__ayuda" id="rfc-ayuda">12 o 13 letras y números.</p>
+                <input type="text" id="rfc" name="rfc" aria-describedby="rfc-ayuda" minlength="12" maxlength="13" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="telefono-empresa">Teléfono de la empresa</label>
+                <input type="tel" id="telefono-empresa" name="telefono-empresa" autocomplete="tel" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="correo-empresa">Correo de la empresa</label>
+                <input type="email" id="correo-empresa" name="correo-empresa" autocomplete="email" required>
+              </div>
+            </div>
+          </section>
+          <section class="tarjeta seccion-form" id="parte-direccion" aria-labelledby="parte-direccion-titulo">
+            <h2 class="seccion-form__titulo" id="parte-direccion-titulo"><span class="paso" aria-hidden="true">2</span>Dirección</h2>
+            <div class="fila-campos">
+              <div class="campo-formulario">
+                <label for="calle">Calle y número</label>
+                <input type="text" id="calle" name="calle" autocomplete="address-line1" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="colonia">Colonia</label>
+                <input type="text" id="colonia" name="colonia" autocomplete="address-level3" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="cp">Código postal</label>
+                <input type="text" id="cp" name="cp" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="municipio">Municipio o ciudad</label>
+                <input type="text" id="municipio" name="municipio" autocomplete="address-level2" required>
+              </div>
+            </div>
+          </section>
+          <section class="tarjeta seccion-form" id="parte-contacto" aria-labelledby="parte-contacto-titulo">
+            <h2 class="seccion-form__titulo" id="parte-contacto-titulo"><span class="paso" aria-hidden="true">3</span>Persona de contacto</h2>
+            <div class="fila-campos fila-campos--3">
+              <div class="campo-formulario">
+                <label for="nombre">Nombre(s)</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="given-name" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="apellido-paterno">Apellido paterno</label>
+                <input type="text" id="apellido-paterno" name="apellido-paterno" autocomplete="family-name" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="apellido-materno">Apellido materno</label>
+                <input type="text" id="apellido-materno" name="apellido-materno" required>
+              </div>
+            </div>
+            <div class="fila-campos">
+              <div class="campo-formulario">
+                <label for="telefono-contacto">Teléfono</label>
+                <input type="tel" id="telefono-contacto" name="telefono-contacto" autocomplete="tel" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="correo-contacto">Correo electrónico</label>
+                <input type="email" id="correo-contacto" name="correo-contacto" autocomplete="email" required>
+              </div>
+            </div>
+          </section>
+          <section class="tarjeta seccion-form" id="parte-imagenes" aria-labelledby="parte-imagenes-titulo">
+            <h2 class="seccion-form__titulo" id="parte-imagenes-titulo"><span class="paso" aria-hidden="true">4</span>Logo y banner</h2>
+            <div class="fila-campos">
+              <div class="campo-formulario">
+                <span class="campo-formulario__etiqueta">Logo</span>
+                <div class="zona-archivo">
+                  <img src="img/iconos/imagen.svg" alt="" width="32" height="32">
+                  <span class="texto-secundario">PNG o JPG, máximo 2 MB</span>
+                  <label class="boton boton--secundario" for="logo">Subir logo</label>
+                  <input type="file" id="logo" name="logo" accept="image/png, image/jpeg">
+                </div>
+              </div>
+              <div class="campo-formulario">
+                <span class="campo-formulario__etiqueta">Banner</span>
+                <div class="zona-archivo">
+                  <img src="img/iconos/imagen.svg" alt="" width="32" height="32">
+                  <span class="texto-secundario">Imagen horizontal, PNG o JPG, máximo 5 MB</span>
+                  <label class="boton boton--secundario" for="banner">Subir banner</label>
+                  <input type="file" id="banner" name="banner" accept="image/png, image/jpeg">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="tarjeta seccion-form" id="parte-contrasena" aria-labelledby="parte-contrasena-titulo">
+            <h2 class="seccion-form__titulo" id="parte-contrasena-titulo"><span class="paso" aria-hidden="true">5</span>Contraseña</h2>
+            <div class="fila-campos">
+              <div class="campo-formulario">
+                <label for="contrasena-nueva">Crea una contraseña</label>
+                <p class="campo-formulario__ayuda" id="contrasena-nueva-ayuda">Mínimo 8 letras o números.</p>
+                <input type="password" id="contrasena-nueva" aria-describedby="contrasena-nueva-ayuda" autocomplete="new-password" minlength="8" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="contrasena-repetir">Escribe otra vez la contraseña</label>
+                <input type="password" id="contrasena-repetir" autocomplete="new-password" minlength="8" required>
+              </div>
+            </div>
+          </section>
+          <section class="tarjeta seccion-form" id="parte-terminos" aria-labelledby="parte-terminos-titulo">
+            <h2 class="seccion-form__titulo" id="parte-terminos-titulo"><span class="paso" aria-hidden="true">6</span>Acepta los términos</h2>
+            <div>
+              <label class="casilla">
+                <input class="control-casilla" type="checkbox" name="terminos" required>
+                <span>Acepto los <a href="conoce-amac.html#terminos">Términos y condiciones</a></span>
+              </label>
+              <label class="casilla">
+                <input class="control-casilla" type="checkbox" name="privacidad" required>
+                <span>Acepto el <a href="conoce-amac.html#privacidad">Aviso de privacidad</a></span>
+              </label>
+            </div>
+          </section>
+          <div class="aviso">
+            <div>
+              <p class="aviso__titulo">Revisaremos tu registro</p>
+              <p>AMAC valida cada empresa antes de que pueda publicar vacantes. Te avisaremos por correo en un máximo de 3 días hábiles.</p>
+            </div>
+          </div>
+          <div class="registro__enviar">
+            <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+            <button class="boton boton--primario" type="submit">Enviar registro</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie fondo-oscuro">
+    <div class="contenedor pie__interior">
+      <p class="pie__lema">Envejecer es <strong>vivir.</strong></p>
+      <nav aria-label="Enlaces de AMAC">
+        <ul class="pie__enlaces">
+          <li><a href="conoce-amac.html">Conoce a AMAC</a></li>
+          <li><a href="conoce-amac.html#privacidad">Aviso de privacidad</a></li>
+          <li><a class="boton boton--coral boton--chico" href="conoce-amac.html#donativo">Haz un donativo</a></li>
+        </ul>
+      </nav>
+      <p class="pie__legal">¿Dudas? Llama a AMAC al <a href="tel:+528100000000">81 0000 0000</a>, de lunes a viernes de 9:00 a 17:00.</p>
+    </div>
+  </footer>
+</body>
+</html>

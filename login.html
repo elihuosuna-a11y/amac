@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión | AMAC</title>
+  <meta name="description" content="Entra a la bolsa de trabajo de AMAC para postularte y ver tus solicitudes.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body class="pagina-publica pagina-acceso">
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado encabezado--publico">
+    <div class="encabezado__interior">
+      <a class="logo" href="index.html">
+        <img src="img/isotipo.svg" alt="" width="38" height="22">
+        <span>AMAC</span><span class="solo-lector">, ir a vacantes</span>
+      </a>
+      <div class="encabezado__acciones">
+        <a class="boton-ayuda" href="tel:+528100000000">
+          <img src="img/iconos/telefono.svg" alt="" width="22" height="22">
+          <span>Ayuda<span class="boton-ayuda__telefono">: 81 0000 0000</span><span class="solo-lector">, llamar a AMAC</span></span>
+        </a>
+        <a class="boton boton--secundario boton--chico" href="registro-candidato.html">Crear cuenta</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="acceso">
+      <section class="acceso__marca fondo-oscuro" aria-label="Sobre AMAC">
+        <p class="acceso__lema">Envejecer es <strong>vivir.</strong></p>
+        <p>La bolsa de trabajo de AMAC para personas adultas mayores en Nuevo León.</p>
+        <p>¿Necesitas ayuda para entrar?<br><a href="tel:+528100000000">Llama a AMAC: 81 0000 0000</a></p>
+      </section>
+
+      <div class="acceso__contenido">
+        <div class="contenedor acceso__formulario pila">
+          <div class="titulo-pagina">
+            <h1>Iniciar sesión</h1>
+            <p>Entra para postularte y ver tus solicitudes.</p>
+          </div>
+
+          <form class="pila" action="index.html" method="get">
+          <div class="campo-formulario">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" autocomplete="email" required>
+          </div>
+            <div class="campo-con-boton">
+          <div class="campo-formulario">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" autocomplete="current-password" required>
+          </div>
+              <button class="boton boton--secundario" type="button" aria-controls="contrasena">Mostrar</button>
+            </div>
+            <p><a href="conoce-amac.html#contacto">¿Olvidaste tu contraseña?</a></p>
+            <button class="boton boton--primario boton--bloque" type="submit">Entrar</button>
+          </form>
+
+          <p class="separador-texto">¿No tienes cuenta?</p>
+          <div class="grupo-botones">
+            <a class="boton boton--secundario" href="registro-candidato.html">Busco empleo</a>
+            <a class="boton boton--secundario" href="registro-empresa.html">Soy una empresa</a>
+          </div>
+          <p><a href="empresa-vacantes.html">Ver demo del panel de empresa</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie fondo-oscuro">
+    <div class="contenedor pie__interior">
+      <p class="pie__lema">Envejecer es <strong>vivir.</strong></p>
+      <nav aria-label="Enlaces de AMAC">
+        <ul class="pie__enlaces">
+          <li><a href="conoce-amac.html">Conoce a AMAC</a></li>
+          <li><a href="conoce-amac.html#privacidad">Aviso de privacidad</a></li>
+          <li><a class="boton boton--coral boton--chico" href="conoce-amac.html#donativo">Haz un donativo</a></li>
+        </ul>
+      </nav>
+      <p class="pie__legal">¿Dudas? Llama a AMAC al <a href="tel:+528100000000">81 0000 0000</a>, de lunes a viernes de 9:00 a 17:00.</p>
+    </div>
+  </footer>
+</body>
+</html>

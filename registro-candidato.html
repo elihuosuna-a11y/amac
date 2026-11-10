@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crea tu cuenta para buscar empleo | AMAC</title>
+  <meta name="description" content="Registro de candidato en la bolsa de trabajo de AMAC.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body class="pagina-publica">
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado encabezado--publico">
+    <div class="encabezado__interior">
+      <a class="logo" href="index.html">
+        <img src="img/isotipo.svg" alt="" width="38" height="22">
+        <span>AMAC</span><span class="solo-lector">, ir a vacantes</span>
+      </a>
+      <div class="encabezado__acciones">
+        <a class="boton-ayuda" href="tel:+528100000000">
+          <img src="img/iconos/telefono.svg" alt="" width="22" height="22">
+          <span>Ayuda<span class="boton-ayuda__telefono">: 81 0000 0000</span><span class="solo-lector">, llamar a AMAC</span></span>
+        </a>
+        <a class="boton boton--secundario boton--chico" href="login.html">Iniciar sesión</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="contenedor">
+      <div class="titulo-pagina">
+        <h1>Crea tu cuenta para buscar empleo</h1>
+        <p>Son 5 partes. Todos los campos se piden, salvo los que dicen «opcional».</p>
+      </div>
+
+      <div class="registro">
+        <nav class="registro__indice tarjeta indice-pasos" aria-label="Partes del registro">
+          <ol>
+            <li><a href="#parte-contacto"><span class="paso" aria-hidden="true">1</span>Contacto</a></li>
+            <li><a href="#parte-datos"><span class="paso" aria-hidden="true">2</span>Datos personales</a></li>
+            <li><a href="#parte-direccion"><span class="paso" aria-hidden="true">3</span>Dirección</a></li>
+            <li><a href="#parte-experiencia"><span class="paso" aria-hidden="true">4</span>Experiencia</a></li>
+            <li><a href="#parte-terminos"><span class="paso" aria-hidden="true">5</span>Términos</a></li>
+          </ol>
+        </nav>
+
+        <form class="registro__formulario" action="login.html" method="get">
+          <section class="tarjeta seccion-form" id="parte-contacto" aria-labelledby="parte-contacto-titulo">
+            <h2 class="seccion-form__titulo" id="parte-contacto-titulo"><span class="paso" aria-hidden="true">1</span>¿Cómo te contactamos?</h2>
+            <p>Escribe al menos uno: tu correo o tu celular.</p>
+            <div class="fila-campos">
+              <div class="campo-formulario">
+                <label for="correo">Correo electrónico (opcional)</label>
+                <input type="email" id="correo" name="correo" autocomplete="email">
+              </div>
+              <div class="campo-formulario">
+                <label for="celular">Número de celular (opcional)</label>
+                <p class="campo-formulario__ayuda" id="celular-ayuda">10 dígitos, sin espacios.</p>
+                <input type="tel" id="celular" name="celular" aria-describedby="celular-ayuda" autocomplete="tel" inputmode="numeric" pattern="[0-9]{10}">
+              </div>
+            </div>
+            <fieldset class="grupo-opciones grupo-opciones--2">
+              <legend>Si escribiste los dos, ¿cuál prefieres?</legend>
+              <label class="opcion"><input class="control-radio" type="radio" name="medio" value="correo"><span class="opcion__titulo">Correo electrónico</span></label>
+              <label class="opcion"><input class="control-radio" type="radio" name="medio" value="celular"><span class="opcion__titulo">Celular</span></label>
+            </fieldset>
+            <div class="fila-campos">
+              <div class="campo-formulario">
+                <label for="contrasena-nueva">Crea una contraseña</label>
+                <p class="campo-formulario__ayuda" id="contrasena-nueva-ayuda">Mínimo 8 letras o números.</p>
+                <input type="password" id="contrasena-nueva" aria-describedby="contrasena-nueva-ayuda" autocomplete="new-password" minlength="8" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="contrasena-repetir">Escribe otra vez la contraseña</label>
+                <input type="password" id="contrasena-repetir" autocomplete="new-password" minlength="8" required>
+              </div>
+            </div>
+          </section>
+          <section class="tarjeta seccion-form" id="parte-datos" aria-labelledby="parte-datos-titulo">
+            <h2 class="seccion-form__titulo" id="parte-datos-titulo"><span class="paso" aria-hidden="true">2</span>Tus datos personales</h2>
+            <div class="fila-campos fila-campos--3">
+              <div class="campo-formulario">
+                <label for="nombre">Nombre(s)</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="given-name" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="apellido-paterno">Apellido paterno</label>
+                <input type="text" id="apellido-paterno" name="apellido-paterno" autocomplete="family-name" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="apellido-materno">Apellido materno</label>
+                <input type="text" id="apellido-materno" name="apellido-materno" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" inputmode="numeric" min="18" max="110" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="sexo">Sexo</label>
+                <select id="sexo" name="sexo" required>
+                  <option value="">Elige una opción</option>
+                  <option value="mujer">Mujer</option>
+                  <option value="hombre">Hombre</option>
+                  <option value="otro">Prefiero no decir</option>
+                </select>
+              </div>
+              <div class="campo-formulario">
+                <label for="estudios">Último nivel de estudios</label>
+                <select id="estudios" name="estudios" required>
+                  <option value="">Elige una opción</option>
+                  <option value="ninguno">Sin estudios</option>
+                  <option value="primaria">Primaria</option>
+                  <option value="secundaria">Secundaria</option>
+                  <option value="preparatoria">Preparatoria</option>
+                  <option value="licenciatura">Licenciatura</option>
+                  <option value="posgrado">Posgrado</option>
+                </select>
+              </div>
+            </div>
+          </section>
+          <section class="tarjeta seccion-form" id="parte-direccion" aria-labelledby="parte-direccion-titulo">
+            <h2 class="seccion-form__titulo" id="parte-direccion-titulo"><span class="paso" aria-hidden="true">3</span>Tu dirección</h2>
+            <div class="fila-campos">
+              <div class="campo-formulario">
+                <label for="calle">Calle y número</label>
+                <input type="text" id="calle" name="calle" autocomplete="address-line1" required>
+              </div>
+              <div class="campo-formulario">
+                <label for="colonia">Colonia</label>
+                <input type="text" id="colonia" name="colonia" autocomplete="address-level3" required>
+              </div>
+            </div>
+          </section>
+          <section class="tarjeta seccion-form" id="parte-experiencia" aria-labelledby="parte-experiencia-titulo">
+            <h2 class="seccion-form__titulo" id="parte-experiencia-titulo"><span class="paso" aria-hidden="true">4</span>Tu experiencia</h2>
+            <fieldset class="subtarjeta">
+              <legend>Trabajo anterior</legend>
+              <div class="fila-campos fila-campos--3">
+                <div class="campo-formulario">
+                  <label for="puesto">Puesto</label>
+                  <input type="text" id="puesto" name="puesto">
+                </div>
+                <div class="campo-formulario">
+                  <label for="empresa-anterior">Empresa o lugar</label>
+                  <input type="text" id="empresa-anterior" name="empresa-anterior">
+                </div>
+                <div class="campo-formulario">
+                  <label for="anios">Años que trabajaste ahí</label>
+                  <input type="number" id="anios" name="anios" inputmode="numeric" min="0" max="80">
+                </div>
+              </div>
+            </fieldset>
+            <div><button class="boton boton--secundario" type="button">+ Agregar otro trabajo</button></div>
+            <fieldset aria-describedby="habilidades-ayuda">
+              <legend class="campo-formulario__etiqueta">¿Qué sabes hacer?</legend>
+              <p class="campo-formulario__ayuda" id="habilidades-ayuda">Toca las que tengas.</p>
+              <div class="habilidades">
+                <label class="habilidad"><input type="checkbox" name="habilidades[]" value="h0" checked>Atención a clientes</label>
+                <label class="habilidad"><input type="checkbox" name="habilidades[]" value="h1">Manejo de caja</label>
+                <label class="habilidad"><input type="checkbox" name="habilidades[]" value="h2">Uso de computadora</label>
+                <label class="habilidad"><input type="checkbox" name="habilidades[]" value="h3">Cocina</label>
+                <label class="habilidad"><input type="checkbox" name="habilidades[]" value="h4">Ventas</label>
+                <label class="habilidad"><input type="checkbox" name="habilidades[]" value="h5">Limpieza</label>
+                <label class="habilidad"><input type="checkbox" name="habilidades[]" value="h6">Cuidado de personas</label>
+              </div>
+            </fieldset>
+            <div class="fila-campos">
+              <div class="campo-formulario">
+                <label for="otra-habilidad">Otra habilidad (opcional)</label>
+                <input type="text" id="otra-habilidad" name="otra-habilidad">
+              </div>
+              <div class="campo-formulario">
+                <span class="campo-formulario__etiqueta">Tu currículum (CV) (opcional)</span>
+                <div class="zona-archivo">
+                  <img src="img/iconos/subir.svg" alt="" width="32" height="32">
+                  <span class="texto-secundario">PDF, máximo 5 MB</span>
+                  <label class="boton boton--secundario" for="cv">Subir mi CV</label>
+                  <input type="file" id="cv" name="cv" accept="application/pdf">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="tarjeta seccion-form" id="parte-terminos" aria-labelledby="parte-terminos-titulo">
+            <h2 class="seccion-form__titulo" id="parte-terminos-titulo"><span class="paso" aria-hidden="true">5</span>Acepta los términos</h2>
+            <div>
+              <label class="casilla">
+                <input class="control-casilla" type="checkbox" name="terminos" required>
+                <span>Acepto los <a href="conoce-amac.html#terminos">Términos y condiciones</a></span>
+              </label>
+              <label class="casilla">
+                <input class="control-casilla" type="checkbox" name="privacidad" required>
+                <span>Acepto el <a href="conoce-amac.html#privacidad">Aviso de privacidad</a></span>
+              </label>
+            </div>
+          </section>
+          <div class="aviso">
+            <div>
+              <p class="aviso__titulo">Después de crear tu cuenta</p>
+              <p>Te enviaremos un código para confirmar tu correo o celular. AMAC revisará tu registro; mientras tanto puedes ver vacantes, pero todavía no postularte.</p>
+            </div>
+          </div>
+          <div class="registro__enviar">
+            <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+            <button class="boton boton--primario" type="submit">Crear mi cuenta</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie fondo-oscuro">
+    <div class="contenedor pie__interior">
+      <p class="pie__lema">Envejecer es <strong>vivir.</strong></p>
+      <nav aria-label="Enlaces de AMAC">
+        <ul class="pie__enlaces">
+          <li><a href="conoce-amac.html">Conoce a AMAC</a></li>
+          <li><a href="conoce-amac.html#privacidad">Aviso de privacidad</a></li>
+          <li><a class="boton boton--coral boton--chico" href="conoce-amac.html#donativo">Haz un donativo</a></li>
+        </ul>
+      </nav>
+      <p class="pie__legal">¿Dudas? Llama a AMAC al <a href="tel:+528100000000">81 0000 0000</a>, de lunes a viernes de 9:00 a 17:00.</p>
+    </div>
+  </footer>
+</body>
+</html>

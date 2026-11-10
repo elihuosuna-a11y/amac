@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis vacantes | AMAC</title>
+  <meta name="description" content="Panel de la empresa: revisa tus vacantes, solicitudes recibidas y su estado.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="encabezado__interior">
+      <a class="logo" href="index.html">
+        <img src="img/isotipo.svg" alt="" width="38" height="22">
+        <span>AMAC</span><span class="solo-lector">, ir a vacantes</span>
+      </a>
+      <nav class="menu" aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li>
+            <a class="menu__enlace" href="empresa-vacantes.html" aria-current="page">
+              <img class="menu__icono" src="img/iconos/maletin.svg" alt="" width="24" height="24">
+              Mis vacantes
+            </a>
+          </li>
+          <li class="menu__solo-escritorio">
+            <a class="menu__enlace" href="conoce-amac.html">
+              <img class="menu__icono" src="img/iconos/info.svg" alt="" width="24" height="24">
+              Conoce a AMAC
+            </a>
+          </li>
+          <li class="menu__solo-movil">
+            <a class="menu__enlace" href="login.html">
+              <img class="menu__icono" src="img/iconos/usuario.svg" alt="" width="24" height="24">
+              Mi cuenta
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="encabezado__acciones">
+        <a class="boton-ayuda" href="tel:+528100000000">
+          <img src="img/iconos/telefono.svg" alt="" width="22" height="22">
+          <span>Ayuda<span class="boton-ayuda__telefono">: 81 0000 0000</span><span class="solo-lector">, llamar a AMAC</span></span>
+        </a>
+        <a class="cuenta" href="login.html"><img src="img/iconos/edificio.svg" alt="" width="22" height="22">Distribuidora del Norte<span class="solo-lector">, cuenta de la empresa</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="contenedor">
+      <div class="titulo-pagina titulo-pagina--con-accion">
+        <h1>Mis vacantes</h1>
+        <p>Revisa tus vacantes, cuántas personas se postularon y cambia su estado.</p>
+        <button class="boton boton--primario" type="button">+ Publicar vacante</button>
+      </div>
+
+      <div class="pastillas" role="group" aria-label="Filtrar vacantes por estado">
+        <button class="pastilla" type="button" aria-pressed="true">Todas (3)</button>
+        <button class="pastilla" type="button" aria-pressed="false">Activas (1)</button>
+        <button class="pastilla" type="button" aria-pressed="false">Pausadas (1)</button>
+        <button class="pastilla" type="button" aria-pressed="false">Cerradas (1)</button>
+      </div>
+
+      <div class="tabla-marco">
+        <table class="tabla">
+          <caption class="solo-lector">Vacantes de Distribuidora del Norte: 3 registros</caption>
+          <thead>
+            <tr>
+              <th scope="col">Vacante</th>
+              <th scope="col">Publicada</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Solicitudes</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="tabla__principal" data-orden="2">Recepción de almacén</th>
+              <td data-orden="3"><span class="tabla__etiqueta-movil">Publicada el </span><time datetime="2026-10-03">3 oct 2026</time></td>
+              <td data-orden="1"><span class="estatus estatus--activa">Activa</span></td>
+              <td data-orden="4"><strong>5 solicitudes</strong><span class="tabla__etiqueta-movil"> recibidas</span></td>
+              <td data-orden="5"><div class="grupo-botones">
+                  <button class="boton boton--secundario boton--chico" type="button">Editar<span class="solo-lector"> Recepción de almacén</span></button>
+                  <button class="boton boton--secundario boton--chico" type="button">Pausar<span class="solo-lector"> Recepción de almacén</span></button>
+                  <button class="boton boton--secundario boton--chico" type="button">Cerrar<span class="solo-lector"> Recepción de almacén</span></button>
+                </div></td>
+            </tr>
+            <tr>
+              <th scope="row" class="tabla__principal" data-orden="2">Auxiliar de inventario</th>
+              <td data-orden="3"><span class="tabla__etiqueta-movil">Publicada el </span><time datetime="2026-09-28">28 sep 2026</time></td>
+              <td data-orden="1"><span class="estatus estatus--pausada">Pausada</span></td>
+              <td data-orden="4"><strong>2 solicitudes</strong><span class="tabla__etiqueta-movil"> recibidas</span></td>
+              <td data-orden="5"><div class="grupo-botones">
+                  <button class="boton boton--secundario boton--chico" type="button">Editar<span class="solo-lector"> Auxiliar de inventario</span></button>
+                  <button class="boton boton--secundario boton--chico" type="button">Reactivar<span class="solo-lector"> Auxiliar de inventario</span></button>
+                  <button class="boton boton--secundario boton--chico" type="button">Cerrar<span class="solo-lector"> Auxiliar de inventario</span></button>
+                </div></td>
+            </tr>
+            <tr>
+              <th scope="row" class="tabla__principal" data-orden="2">Empacador(a)</th>
+              <td data-orden="3"><span class="tabla__etiqueta-movil">Publicada el </span><time datetime="2026-09-01">1 sep 2026</time></td>
+              <td data-orden="1"><span class="estatus estatus--cerrada">Cerrada</span></td>
+              <td data-orden="4"><strong>9 solicitudes</strong><span class="tabla__etiqueta-movil"> recibidas</span></td>
+              <td data-orden="5"><span class="texto-secundario">No aparece en el listado público.</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie fondo-oscuro">
+    <div class="contenedor pie__interior">
+      <p class="pie__lema">Envejecer es <strong>vivir.</strong></p>
+      <nav aria-label="Enlaces de AMAC">
+        <ul class="pie__enlaces">
+          <li><a href="conoce-amac.html">Conoce a AMAC</a></li>
+          <li><a href="conoce-amac.html#privacidad">Aviso de privacidad</a></li>
+          <li><a class="boton boton--coral boton--chico" href="conoce-amac.html#donativo">Haz un donativo</a></li>
+        </ul>
+      </nav>
+      <p class="pie__legal">¿Dudas? Llama a AMAC al <a href="tel:+528100000000">81 0000 0000</a>, de lunes a viernes de 9:00 a 17:00.</p>
+    </div>
+  </footer>
+</body>
+</html>

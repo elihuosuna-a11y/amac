@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conoce a AMAC | AMAC</title>
+  <meta name="description" content="Quiénes somos, contacto, aviso de privacidad y donativos de AMAC.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="encabezado__interior">
+      <a class="logo" href="index.html">
+        <img src="img/isotipo.svg" alt="" width="38" height="22">
+        <span>AMAC</span><span class="solo-lector">, ir a vacantes</span>
+      </a>
+      <nav class="menu" aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li>
+            <a class="menu__enlace" href="index.html">
+              <img class="menu__icono" src="img/iconos/maletin.svg" alt="" width="24" height="24">
+              Vacantes
+            </a>
+          </li>
+          <li>
+            <a class="menu__enlace" href="mis-solicitudes.html">
+              <img class="menu__icono" src="img/iconos/lista.svg" alt="" width="24" height="24">
+              <span class="menu__texto-largo">Mis solicitudes</span><span class="menu__texto-corto">Solicitudes</span>
+            </a>
+          </li>
+          <li class="menu__solo-escritorio">
+            <a class="menu__enlace" href="conoce-amac.html" aria-current="page">
+              <img class="menu__icono" src="img/iconos/info.svg" alt="" width="24" height="24">
+              Conoce a AMAC
+            </a>
+          </li>
+          <li class="menu__solo-movil">
+            <a class="menu__enlace" href="login.html">
+              <img class="menu__icono" src="img/iconos/usuario.svg" alt="" width="24" height="24">
+              Mi cuenta
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="encabezado__acciones">
+        <a class="boton-ayuda" href="tel:+528100000000">
+          <img src="img/iconos/telefono.svg" alt="" width="22" height="22">
+          <span>Ayuda<span class="boton-ayuda__telefono">: 81 0000 0000</span><span class="solo-lector">, llamar a AMAC</span></span>
+        </a>
+        <a class="cuenta" href="login.html"><img src="img/iconos/usuario.svg" alt="" width="22" height="22">María López<span class="solo-lector">, mi cuenta</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="contenedor contenedor--angosto pila">
+      <div class="titulo-pagina">
+        <h1>Conoce a AMAC</h1>
+        <p>Envejecer es vivir: ayudamos a las personas adultas mayores de Nuevo León a seguir trabajando, aprendiendo y participando.</p>
+      </div>
+
+      <section class="pila pila--chica" aria-labelledby="titulo-quienes">
+        <h2 id="titulo-quienes">¿Quiénes somos?</h2>
+        <p>AMAC es una asociación civil que acompaña a personas adultas mayores. Con esta bolsa de trabajo conectamos a quienes quieren seguir activos con empresas que valoran su experiencia.</p>
+      </section>
+
+      <section class="pila pila--chica" aria-labelledby="titulo-que-hacemos">
+        <h2 id="titulo-que-hacemos">¿Qué hacemos?</h2>
+        <ul class="lista-vinetas">
+          <li>Publicamos vacantes revisadas por nuestro equipo.</li>
+          <li>Te ayudamos por teléfono a buscar empleo y a postularte.</li>
+          <li>Acompañamos a las empresas para que sus vacantes sean incluyentes.</li>
+        </ul>
+      </section>
+
+      <section class="tarjeta tarjeta--ayuda" id="contacto" aria-labelledby="titulo-contacto">
+        <h2 id="titulo-contacto">Contacto</h2>
+        <p>Llámanos de lunes a viernes de 9:00 a 17:00. Una persona te atiende.</p>
+        <a class="telefono-destacado" href="tel:+528100000000">81 0000 0000</a>
+      </section>
+
+      <section class="pila pila--chica" id="terminos" aria-labelledby="titulo-terminos">
+        <h2 id="titulo-terminos">Términos y condiciones</h2>
+        <p>El uso de la bolsa de trabajo es gratuito para las personas candidatas. Las empresas se comprometen a publicar vacantes reales, con sueldo y horario claros.</p>
+      </section>
+
+      <section class="pila pila--chica" id="privacidad" aria-labelledby="titulo-privacidad">
+        <h2 id="titulo-privacidad">Aviso de privacidad</h2>
+        <p>Tus datos solo se usan para que las empresas a las que te postulas puedan contactarte. Nunca los vendemos ni los compartimos con terceros.</p>
+      </section>
+
+      <section class="tarjeta" id="donativo" aria-labelledby="titulo-donativo">
+        <h2 id="titulo-donativo">Haz un donativo</h2>
+        <p>Tu apoyo nos ayuda a mantener esta plataforma gratuita y a dar acompañamiento por teléfono.</p>
+        <p><a class="boton boton--coral" href="tel:+528100000000">Llamar para donar</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pie fondo-oscuro">
+    <div class="contenedor pie__interior">
+      <p class="pie__lema">Envejecer es <strong>vivir.</strong></p>
+      <nav aria-label="Enlaces de AMAC">
+        <ul class="pie__enlaces">
+          <li><a href="conoce-amac.html">Conoce a AMAC</a></li>
+          <li><a href="conoce-amac.html#privacidad">Aviso de privacidad</a></li>
+          <li><a class="boton boton--coral boton--chico" href="conoce-amac.html#donativo">Haz un donativo</a></li>
+        </ul>
+      </nav>
+      <p class="pie__legal">¿Dudas? Llama a AMAC al <a href="tel:+528100000000">81 0000 0000</a>, de lunes a viernes de 9:00 a 17:00.</p>
+    </div>
+  </footer>
+</body>
+</html>
