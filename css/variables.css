@@ -1,0 +1,103 @@
+
+
+:root {
+  
+  --color-marino: #202945;          
+  --color-coral: #ff815c;           
+  --color-azul-claro: #cae4ef;      
+  --color-durazno: #fddaad;         
+
+  
+  --color-texto: var(--color-marino);
+  --color-texto-secundario: #4a5068; 
+  --color-texto-inverso: #ffffff;    
+
+ 
+  --color-fondo: #f6f7f9;            
+  --color-superficie: #ffffff;       
+  --color-superficie-suave: #eef1f6; 
+  --color-superficie-ayuda: #ffe4d9; 
+  --color-ayuda-tarjeta: #fff4ef;    
+  --color-deshabilitado: #e3e6ec;    
+
+  
+  --color-borde-tarjeta: #d5d9e2;    
+  --color-borde-campo: #6b7288;      
+  --color-borde-opcion: #c2c7d2;     
+  --color-borde-ayuda: #ffc9b6;      
+
+
+  --color-exito-texto: #1e5c32;      
+  --color-exito-fondo: #d3ebd5;      
+  --color-exito-aviso: #e8f4ea;      
+  --color-rechazo-texto: #7a1f1f;    
+  --color-rechazo-fondo: #f6d6d6;    
+  --color-peligro: #9b1c1c;          
+  --color-error: #b42318;            
+  --color-error-fondo: #fce8e6;
+  --color-info-fondo: #eef6fa;       
+  --color-info-borde: #4d86a3;       
+  --color-advertencia-fondo: #fff1dc;
+  --color-advertencia-borde: #c98a2e;
+
+  
+  --color-foco: var(--color-marino);
+  --color-foco-halo: var(--color-coral);
+
+  
+  --fuente-titulos: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  --fuente-base: "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+
+  --texto-chico: 1.125rem;      
+  --texto-base: 1.1875rem;      
+  --texto-grande: 1.25rem;      
+  --texto-precio: 1.5rem;       
+  --texto-h3: 1.4375rem;        
+  --texto-h2: 1.375rem;         
+  --texto-h2-escritorio: 1.75rem; 
+  --texto-h1: 1.875rem;         
+  --texto-h1-escritorio: 2.75rem; 
+
+  --peso-normal: 400;
+  --peso-medio: 500;
+  --peso-seminegrita: 600;
+  --peso-negrita: 700;
+
+  --interlineado: 1.5;
+  --interlineado-titulo: 1.25;
+
+  
+  --espacio-xs: 0.375rem;  
+  --espacio-s: 0.5rem;     
+  --espacio-m: 1rem;       
+  --espacio-ml: 1.25rem;   
+  --espacio-l: 1.5rem;     
+  --espacio-xl: 2rem;      
+  --espacio-2xl: 3rem;     
+  --espacio-3xl: 4rem;     
+
+  
+  --radio-campo: 0.625rem;   
+  --radio: 0.75rem;          
+  --radio-aviso: 0.875rem;   
+  --radio-tarjeta: 1rem;     
+  --radio-pastilla: 999px;   
+
+  
+  --alto-control: 3.5rem;    
+  --ancho-contenido: 75rem;  
+  --alto-barra-inferior: 5.25rem; 
+}
+
+
+@media (prefers-contrast: more) {
+  :root {
+    --color-texto-secundario: #202945;
+    --color-borde-tarjeta: #202945;
+    --color-borde-campo: #202945;
+    --color-borde-opcion: #202945;
+    --color-fondo: #ffffff;
+    --color-superficie-suave: #dfe4ee;
+  }
+}

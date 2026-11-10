@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacantes disponibles | AMAC</title>
+  <meta name="description" content="Bolsa de trabajo de AMAC: vacantes para personas adultas mayores en Nuevo León.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body class="pagina-listado">
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="encabezado__interior">
+      <a class="logo" href="index.html">
+        <img src="img/isotipo.svg" alt="" width="38" height="22">
+        <span>AMAC</span><span class="solo-lector">, ir a vacantes</span>
+      </a>
+      <nav class="menu" aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li>
+            <a class="menu__enlace" href="index.html" aria-current="page">
+              <img class="menu__icono" src="img/iconos/maletin.svg" alt="" width="24" height="24">
+              Vacantes
+            </a>
+          </li>
+          <li>
+            <a class="menu__enlace" href="mis-solicitudes.html">
+              <img class="menu__icono" src="img/iconos/lista.svg" alt="" width="24" height="24">
+              <span class="menu__texto-largo">Mis solicitudes</span><span class="menu__texto-corto">Solicitudes</span>
+            </a>
+          </li>
+          <li class="menu__solo-escritorio">
+            <a class="menu__enlace" href="conoce-amac.html">
+              <img class="menu__icono" src="img/iconos/info.svg" alt="" width="24" height="24">
+              Conoce a AMAC
+            </a>
+          </li>
+          <li class="menu__solo-movil">
+            <a class="menu__enlace" href="login.html">
+              <img class="menu__icono" src="img/iconos/usuario.svg" alt="" width="24" height="24">
+              Mi cuenta
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="encabezado__acciones">
+        <a class="boton-ayuda" href="tel:+528100000000">
+          <img src="img/iconos/telefono.svg" alt="" width="22" height="22">
+          <span>Ayuda<span class="boton-ayuda__telefono">: 81 0000 0000</span><span class="solo-lector">, llamar a AMAC</span></span>
+        </a>
+        <a class="cuenta" href="login.html"><img src="img/iconos/usuario.svg" alt="" width="22" height="22">María López<span class="solo-lector">, mi cuenta</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="principal">
+    <section class="banda-busqueda" aria-labelledby="titulo-pagina">
+      <div class="contenedor">
+        <div class="titulo-pagina">
+          <h1 id="titulo-pagina">Encuentra un empleo</h1>
+          <p>Vacantes disponibles para personas adultas mayores en Nuevo León.</p>
+        </div>
+        <form class="buscador tarjeta" action="index.html" method="get" role="search">
+          <div class="campo-con-boton">
+            <div class="campo-formulario">
+              <label for="buscar">Buscar por puesto, empresa o lugar</label>
+              <input type="search" id="buscar" name="buscar" autocomplete="off">
+            </div>
+            <button class="boton boton--primario" type="submit">Buscar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="contenedor listado">
+      <section class="listado__filtros tarjeta" aria-labelledby="titulo-filtros">
+        <h2 id="titulo-filtros">Filtrar vacantes</h2>
+        <form class="pila pila--chica" action="index.html" method="get">
+          <fieldset class="filtro">
+            <legend>Horario</legend>
+            <div class="filtro__opciones">
+              <label class="opcion-simple">
+                <input class="control-radio" type="radio" name="horario" value="todos" checked>
+                Todos los horarios
+              </label>
+              <label class="opcion-simple">
+                <input class="control-radio" type="radio" name="horario" value="matutino">
+                Matutino
+              </label>
+              <label class="opcion-simple">
+                <input class="control-radio" type="radio" name="horario" value="vespertino">
+                Vespertino
+              </label>
+              <label class="opcion-simple">
+                <input class="control-radio" type="radio" name="horario" value="medio-tiempo">
+                Medio tiempo
+              </label>
+              <label class="opcion-simple">
+                <input class="control-radio" type="radio" name="horario" value="fines-de-semana">
+                Fines de semana
+              </label>
+            </div>
+          </fieldset>
+        <div class="campo-formulario">
+            <label for="categoria">Tipo de empleo</label>
+            <select id="categoria" name="categoria">
+              <option value="todos">Todos los tipos</option>
+              <option value="logistica">Logística y almacén</option>
+              <option value="atencion">Atención a clientes</option>
+              <option value="alimentos">Alimentos</option>
+              <option value="comercio">Comercio</option>
+              <option value="cultura">Educación y cultura</option>
+            </select>
+          </div>
+          <button class="boton boton--primario boton--bloque" type="submit">Aplicar filtros</button>
+          <button class="boton boton--secundario boton--bloque" type="reset">Quitar filtros</button>
+        </form>
+      </section>
+
+      <section class="listado__resultados" aria-labelledby="titulo-resultados">
+        <h2 class="conteo" id="titulo-resultados">6 vacantes disponibles</h2>
+        <ul class="lista-vacantes">
+            <li>
+              <article class="tarjeta-vacante">
+                <div class="tarjeta-vacante__encabezado">
+                  <h3 class="tarjeta-vacante__titulo">Recepción de almacén</h3>
+                  <p class="con-icono con-icono--fuerte"><img src="img/iconos/edificio.svg" alt="" width="22" height="22"><span><span class="solo-lector">Empresa: </span>Distribuidora del Norte</span></p>
+                </div>
+                <p class="tarjeta-vacante__sueldo"><span class="tarjeta-vacante__monto">$8,600</span> al mes</p>
+                <ul class="tarjeta-vacante__datos">
+                  <li class="con-icono"><img src="img/iconos/ubicacion.svg" alt="" width="22" height="22"><span><span class="solo-lector">Ubicación: </span>Monterrey, N.L.</span></li>
+                  <li class="con-icono"><img src="img/iconos/reloj.svg" alt="" width="22" height="22"><span><span class="solo-lector">Horario: </span>Matutino · 8:00 a 14:00</span></li>
+                </ul>
+                <ul class="tarjeta-vacante__etiquetas">
+                  <li class="chip">Logística y almacén</li>
+                  <li class="chip"><img src="img/iconos/telefono.svg" alt="" width="22" height="22">También por teléfono</li>
+                </ul>
+                <a class="boton boton--primario boton--bloque" href="vacante.html">Ver detalle<span class="solo-lector"> de Recepción de almacén</span></a>
+              </article>
+            </li>
+            <li>
+              <article class="tarjeta-vacante">
+                <div class="tarjeta-vacante__encabezado">
+                  <h3 class="tarjeta-vacante__titulo">Atención a clientes</h3>
+                  <p class="con-icono con-icono--fuerte"><img src="img/iconos/edificio.svg" alt="" width="22" height="22"><span><span class="solo-lector">Empresa: </span>Servicios del Valle</span></p>
+                </div>
+                <p class="tarjeta-vacante__sueldo"><span class="tarjeta-vacante__monto">$9,200</span> al mes</p>
+                <ul class="tarjeta-vacante__datos">
+                  <li class="con-icono"><img src="img/iconos/ubicacion.svg" alt="" width="22" height="22"><span><span class="solo-lector">Ubicación: </span>Guadalupe, N.L.</span></li>
+                  <li class="con-icono"><img src="img/iconos/reloj.svg" alt="" width="22" height="22"><span><span class="solo-lector">Horario: </span>Vespertino · 14:00 a 19:00</span></li>
+                </ul>
+                <ul class="tarjeta-vacante__etiquetas">
+                  <li class="chip">Atención a clientes</li>
+                </ul>
+                <a class="boton boton--primario boton--bloque" href="vacante.html">Ver detalle<span class="solo-lector"> de Atención a clientes</span></a>
+              </article>
+            </li>
+            <li>
+              <article class="tarjeta-vacante">
+                <div class="tarjeta-vacante__encabezado">
+                  <h3 class="tarjeta-vacante__titulo">Ayudante de cocina</h3>
+                  <p class="con-icono con-icono--fuerte"><img src="img/iconos/edificio.svg" alt="" width="22" height="22"><span><span class="solo-lector">Empresa: </span>Fonda Doña Mary</span></p>
+                </div>
+                <p class="tarjeta-vacante__sueldo"><span class="tarjeta-vacante__monto">$7,500</span> al mes</p>
+                <ul class="tarjeta-vacante__datos">
+                  <li class="con-icono"><img src="img/iconos/ubicacion.svg" alt="" width="22" height="22"><span><span class="solo-lector">Ubicación: </span>Apodaca, N.L.</span></li>
+                  <li class="con-icono"><img src="img/iconos/reloj.svg" alt="" width="22" height="22"><span><span class="solo-lector">Horario: </span>Medio tiempo · 9:00 a 13:00</span></li>
+                </ul>
+                <ul class="tarjeta-vacante__etiquetas">
+                  <li class="chip">Alimentos</li>
+                </ul>
+                <a class="boton boton--primario boton--bloque" href="vacante.html">Ver detalle<span class="solo-lector"> de Ayudante de cocina</span></a>
+              </article>
+            </li>
+            <li>
+              <article class="tarjeta-vacante">
+                <div class="tarjeta-vacante__encabezado">
+                  <h3 class="tarjeta-vacante__titulo">Empacador(a) de supermercado</h3>
+                  <p class="con-icono con-icono--fuerte"><img src="img/iconos/edificio.svg" alt="" width="22" height="22"><span><span class="solo-lector">Empresa: </span>Súper La Estrella</span></p>
+                </div>
+                <p class="tarjeta-vacante__sueldo"><span class="tarjeta-vacante__monto">$6,900</span> al mes</p>
+                <ul class="tarjeta-vacante__datos">
+                  <li class="con-icono"><img src="img/iconos/ubicacion.svg" alt="" width="22" height="22"><span><span class="solo-lector">Ubicación: </span>San Nicolás, N.L.</span></li>
+                  <li class="con-icono"><img src="img/iconos/reloj.svg" alt="" width="22" height="22"><span><span class="solo-lector">Horario: </span>Fines de semana · 9:00 a 15:00</span></li>
+                </ul>
+                <ul class="tarjeta-vacante__etiquetas">
+                  <li class="chip">Comercio</li>
+                </ul>
+                <a class="boton boton--primario boton--bloque" href="vacante.html">Ver detalle<span class="solo-lector"> de Empacador(a) de supermercado</span></a>
+              </article>
+            </li>
+            <li>
+              <article class="tarjeta-vacante">
+                <div class="tarjeta-vacante__encabezado">
+                  <h3 class="tarjeta-vacante__titulo">Cajero(a) de farmacia</h3>
+                  <p class="con-icono con-icono--fuerte"><img src="img/iconos/edificio.svg" alt="" width="22" height="22"><span><span class="solo-lector">Empresa: </span>Farmacias del Pueblo</span></p>
+                </div>
+                <p class="tarjeta-vacante__sueldo"><span class="tarjeta-vacante__monto">$8,200</span> al mes</p>
+                <ul class="tarjeta-vacante__datos">
+                  <li class="con-icono"><img src="img/iconos/ubicacion.svg" alt="" width="22" height="22"><span><span class="solo-lector">Ubicación: </span>San Pedro Garza García, N.L.</span></li>
+                  <li class="con-icono"><img src="img/iconos/reloj.svg" alt="" width="22" height="22"><span><span class="solo-lector">Horario: </span>Matutino · 7:00 a 13:00</span></li>
+                </ul>
+                <ul class="tarjeta-vacante__etiquetas">
+                  <li class="chip">Comercio</li>
+                  <li class="chip"><img src="img/iconos/telefono.svg" alt="" width="22" height="22">También por teléfono</li>
+                </ul>
+                <a class="boton boton--primario boton--bloque" href="vacante.html">Ver detalle<span class="solo-lector"> de Cajero(a) de farmacia</span></a>
+              </article>
+            </li>
+            <li>
+              <article class="tarjeta-vacante">
+                <div class="tarjeta-vacante__encabezado">
+                  <h3 class="tarjeta-vacante__titulo">Asistente de biblioteca</h3>
+                  <p class="con-icono con-icono--fuerte"><img src="img/iconos/edificio.svg" alt="" width="22" height="22"><span><span class="solo-lector">Empresa: </span>Centro Cultural Las Flores</span></p>
+                </div>
+                <p class="tarjeta-vacante__sueldo"><span class="tarjeta-vacante__monto">$6,500</span> al mes</p>
+                <ul class="tarjeta-vacante__datos">
+                  <li class="con-icono"><img src="img/iconos/ubicacion.svg" alt="" width="22" height="22"><span><span class="solo-lector">Ubicación: </span>Monterrey, N.L.</span></li>
+                  <li class="con-icono"><img src="img/iconos/reloj.svg" alt="" width="22" height="22"><span><span class="solo-lector">Horario: </span>Vespertino · 15:00 a 19:00</span></li>
+                </ul>
+                <ul class="tarjeta-vacante__etiquetas">
+                  <li class="chip">Educación y cultura</li>
+                </ul>
+                <a class="boton boton--primario boton--bloque" href="vacante.html">Ver detalle<span class="solo-lector"> de Asistente de biblioteca</span></a>
+              </article>
+            </li>
+        </ul>
+      </section>
+
+      <aside class="listado__ayuda tarjeta tarjeta--ayuda" aria-labelledby="titulo-ayuda">
+        <h2 id="titulo-ayuda">¿Necesitas ayuda?</h2>
+        <p>Llama a AMAC y una persona te ayuda a buscar o postularte.</p>
+        <a class="telefono-destacado" href="tel:+528100000000">81 0000 0000</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="pie fondo-oscuro">
+    <div class="contenedor pie__interior">
+      <p class="pie__lema">Envejecer es <strong>vivir.</strong></p>
+      <nav aria-label="Enlaces de AMAC">
+        <ul class="pie__enlaces">
+          <li><a href="conoce-amac.html">Conoce a AMAC</a></li>
+          <li><a href="conoce-amac.html#privacidad">Aviso de privacidad</a></li>
+          <li><a class="boton boton--coral boton--chico" href="conoce-amac.html#donativo">Haz un donativo</a></li>
+        </ul>
+      </nav>
+      <p class="pie__legal">¿Dudas? Llama a AMAC al <a href="tel:+528100000000">81 0000 0000</a>, de lunes a viernes de 9:00 a 17:00.</p>
+    </div>
+  </footer>
+</body>
+</html>
