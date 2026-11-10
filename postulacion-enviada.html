@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postulación enviada | AMAC</title>
+  <meta name="description" content="Tu postulación fue enviada a la empresa.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="encabezado__interior">
+      <a class="logo" href="index.html">
+        <img src="img/isotipo.svg" alt="" width="38" height="22">
+        <span>AMAC</span><span class="solo-lector">, ir a vacantes</span>
+      </a>
+      <nav class="menu" aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li>
+            <a class="menu__enlace" href="index.html" aria-current="page">
+              <img class="menu__icono" src="img/iconos/maletin.svg" alt="" width="24" height="24">
+              Vacantes
+            </a>
+          </li>
+          <li>
+            <a class="menu__enlace" href="mis-solicitudes.html">
+              <img class="menu__icono" src="img/iconos/lista.svg" alt="" width="24" height="24">
+              <span class="menu__texto-largo">Mis solicitudes</span><span class="menu__texto-corto">Solicitudes</span>
+            </a>
+          </li>
+          <li class="menu__solo-escritorio">
+            <a class="menu__enlace" href="conoce-amac.html">
+              <img class="menu__icono" src="img/iconos/info.svg" alt="" width="24" height="24">
+              Conoce a AMAC
+            </a>
+          </li>
+          <li class="menu__solo-movil">
+            <a class="menu__enlace" href="login.html">
+              <img class="menu__icono" src="img/iconos/usuario.svg" alt="" width="24" height="24">
+              Mi cuenta
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="encabezado__acciones">
+        <a class="boton-ayuda" href="tel:+528100000000">
+          <img src="img/iconos/telefono.svg" alt="" width="22" height="22">
+          <span>Ayuda<span class="boton-ayuda__telefono">: 81 0000 0000</span><span class="solo-lector">, llamar a AMAC</span></span>
+        </a>
+        <a class="cuenta" href="login.html"><img src="img/iconos/usuario.svg" alt="" width="22" height="22">María López<span class="solo-lector">, mi cuenta</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="contenedor contenedor--angosto pila">
+      <div class="centrado pila pila--chica">
+        <div class="icono-exito"><img src="img/iconos/check-exito.svg" alt="" width="56" height="56"></div>
+        <h1>¡Listo! Tu postulación fue enviada</h1>
+        <p class="texto-secundario">La empresa ya puede ver tu solicitud. Te avisaremos cuando cambie su estatus.</p>
+      </div>
+
+      <section class="tarjeta tarjeta--amplia" aria-label="Resumen de tu postulación">
+        <dl class="resumen">
+          <div><dt>Vacante</dt><dd>Recepción de almacén</dd></div>
+          <div><dt>Empresa</dt><dd>Distribuidora del Norte</dd></div>
+          <div><dt>Fecha</dt><dd><time datetime="2026-10-21">21 de octubre de 2026</time></dd></div>
+          <div><dt>Estatus</dt><dd><span class="estatus estatus--enviada">Enviada</span></dd></div>
+        </dl>
+      </section>
+
+      <section class="pila pila--chica" aria-labelledby="titulo-sigue">
+        <h2 id="titulo-sigue">¿Qué sigue?</h2>
+        <p>Te avisaremos por correo cuando la empresa revise tu solicitud. También puedes revisarla cuando quieras en «Mis solicitudes».</p>
+      </section>
+
+      <div class="grupo-botones grupo-botones--centro">
+        <a class="boton boton--secundario" href="index.html">Seguir viendo vacantes</a>
+        <a class="boton boton--primario" href="mis-solicitudes.html">Ver mis solicitudes</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie fondo-oscuro">
+    <div class="contenedor pie__interior">
+      <p class="pie__lema">Envejecer es <strong>vivir.</strong></p>
+      <nav aria-label="Enlaces de AMAC">
+        <ul class="pie__enlaces">
+          <li><a href="conoce-amac.html">Conoce a AMAC</a></li>
+          <li><a href="conoce-amac.html#privacidad">Aviso de privacidad</a></li>
+          <li><a class="boton boton--coral boton--chico" href="conoce-amac.html#donativo">Haz un donativo</a></li>
+        </ul>
+      </nav>
+      <p class="pie__legal">¿Dudas? Llama a AMAC al <a href="tel:+528100000000">81 0000 0000</a>, de lunes a viernes de 9:00 a 17:00.</p>
+    </div>
+  </footer>
+</body>
+</html>
